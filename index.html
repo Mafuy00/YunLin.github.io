@@ -1,33 +1,22 @@
 <!DOCTYPE html>
 <!-- The video -->
-<video autoplay muted loop id="bg">
-    <source src="img/bg.mp4" type="video/mp4">
-  </video>
-  
-  <!-- Optional: some overlay text to describe the video -->
-  <div class="content">
-    <h1>Heading</h1>
-    <p>Lorem ipsum...</p>
-    <!-- Use a button to pause/play the video with JavaScript -->
-    <button id="myBtn" onclick="myFunction()">Pause</button>
-  </div>
-</html>
 
-<script>
-    // Get the video
-    var video = document.getElementById("myVideo");
+  
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Video Background</title>
+    </head>
+    <body>
+        <div class="video-container">
+            <video autoplay muted loop id="bg">
+                <source src="img/bg.mp4" type="video/mp4">
+            </video>
+        </div>
     
-    // Get the button
-    var btn = document.getElementById("myBtn");
-    
-    // Pause and play the video, and change the button text
-    function myFunction() {
-      if (video.paused) {
-        video.play();
-        btn.innerHTML = "Pause";
-      } else {
-        video.pause();
-        btn.innerHTML = "Play";
-      }
-    }
-</script>
+        <div class="content">
+            <h1>Your Content Here</h1>
+            <p>This content will appear over the video background.</p>
+        </div>
+    </body>
+</html>
