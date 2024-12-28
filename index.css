@@ -91,3 +91,26 @@ html, body {
         height: 100%;
     }
 }
+
+/* Animated header styles */
+.animated-header {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2em;
+    text-align: center;
+    line-height: 1.5;
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: flyIn 1.5s ease-out forwards;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+@keyframes flyIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
